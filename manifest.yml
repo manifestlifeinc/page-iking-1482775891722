@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: page-iking
+  host: page-iking
+  disk_quota: 1024M
+  services:
+  - page-iking-XPagesData
+  env:
+    APP_HOME_URL: /ToDo_design.nsf
+    APP_PRELOAD_DB: ToDo_design.nsf
+  buildpack: xpages_buildpack
